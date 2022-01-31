@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Registro</title>
+  <meta name="description" content="HTML5, CSS3">
+  <meta name="author" content="Alejandro Amat">
+  <link rel="stylesheet" href="css/estilos.css">
+  <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+	</script>
+  <![endif]-->
+</head>
+<body>
+
+	<form id="registro" method="post">
+		<h1>Regístrate!</h1>
+		<ul>
+			<li>
+				<label for="nombre">Mi nombre es:</label>
+				<input type="text" id="nombre" name="nombre">
+			</li>
+			<li>
+				<label for="email">Mi email es:</label>
+				<input type="text" id="email" name="email">
+			</li>
+			<li>
+				<label for="recuerdame">Recuérdame en este equipo</label>
+				<input type="checkbox"  value="true"  id="recuerdame"> 
+			</li>
+			<li>
+				<label for="url">Mi dirección web es:</label>
+				<input type="text" id="url" name="url">
+			</li>
+			<li>
+				<label for="password1">Me gustaría que mi password fuera:</label>
+				<p>(al menos 6 caracteres, sin espacios)</p>
+				<input type="password" id="password1" name="password1">
+			</li>
+			<li>
+				<label for="password2">Mi password repetida es:</label>
+				<input type="password" id="password2" name="password2">
+			</li>
+			<li>
+				<label for="conocimientos">En una escala de 1 a 10, mis conocimientos de HTML5 son:</label>
+				<input type="text" id="conocimientos" name="conocimientos">
+			</li>
+			<li>
+				<label for="fechaInicio">Por favor, inicia mi suscripción el día:</label>
+				<input type="text" id="fechaInicio" name="fechaInicio">
+			</li>
+			<li>
+				<label for="cantidad">Me gustaría recibir <input type="text" name="cantidad" id="cantidad" value="1"> copias de <cite>El manual de HTML5</cite>.</label>
+			</li>
+			<li>
+				<label for="tambienCSS3">También regístrame para <cite>El manual de CSS3</cite></label>
+				<input id="tambienCSS3" name="tambienCSS3" type="checkbox">
+			</li>
+			<li>
+				<input type="submit" id="registro-submit" value="Envíame"/>
+			</li>
+		</ul>
+	</form>
+	
+</body>
+</html>

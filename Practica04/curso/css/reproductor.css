@@ -1,0 +1,76 @@
+/* estilos para el reproductor de vídeo */
+
+#reproductor
+{
+	float:left;
+	width: 720px;
+	margin: 20px;
+	padding: 5px;
+	background: #999999;
+	border: 1px solid #666666;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+} 
+
+main nav
+{
+	float: left;
+	margin: 10px auto;
+	width: 100px;
+}
+
+main nav label
+{
+	margin: 10px;
+}
+
+input[type="button"]
+{
+	width: 80px;
+	margin: 10px;
+	display: block;
+	
+    background: -webkit-linear-gradient(top,#f06529,#e34c26);
+    background: -moz-linear-gradient(top,#f06529,#e34c26);
+    background: -o-linear-gradient(top,#f06529,#e34c26);
+    background: linear-gradient(to bottom,#f06529,#e34c26);
+	
+    border: 1px solid rgb(180, 80, 121);
+	
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;  
+    border-radius: 5px;
+	
+    padding: .4em;
+    color: white;
+    text-decoration:none;
+}
+
+input[type="button"]:hover
+{
+    background: -webkit-linear-gradient(top,#ff6529,#f34c26);
+    background: -moz-linear-gradient(top,#ff6529,#f34c26);
+    background: -o-linear-gradient(top,#ff6529,#f34c26);
+    background: linear-gradient(to bottom,#ff6529,#f34c26);
+}
+
+#barra
+{
+	width: 705px;
+	margin:5px;
+	height: 16px;
+	padding: 2px;
+	border: 1px solid #CCCCCC;
+	background: #EEEEEE;
+} 
+
+#progreso
+{
+	position: absolute;
+	width: 0px;
+	height: 16px;
+	background: rgba(0,0,150,.2);
+}

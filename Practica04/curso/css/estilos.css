@@ -1,0 +1,328 @@
+/* Estilos generales */
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	background-color: white;
+}
+
+body
+{
+	padding-top: 20px;
+	text-align:center;
+	
+	background: -webkit-linear-gradient(top, rgb(227, 76, 38) 0%, rgba(240, 101, 41, 0) 90%);
+	background: -moz-linear-gradient(top, rgb(227, 76, 38) 0%, rgba(240, 101, 41, 0) 90%);
+	background: -o-linear-gradient(top, rgb(227, 76, 38) 0%, rgba(240, 101, 41, 0) 90%);
+	background: linear-gradient(to bottom, rgb(227, 76, 38) 0%, rgba(240, 101, 41, 0) 90%);
+}		
+
+#page
+{
+	width:960px;
+	margin:0 auto;
+	text-align:left;
+
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+
+	-moz-box-shadow: 10px 10px 10px gray;
+	-webkit-box-shadow: 10px 10px 10px gray;
+	box-shadow: 10px 10px 10px gray;
+}
+
+/* Estilos para la cabecera */
+
+#page>header
+{
+	font-family:Courier;
+	font-size:1.1em;
+	color:white;
+	border-bottom:6px black solid;
+
+	-moz-border-radius: 20px 20px 0px 0px;
+	-webkit-border-radius: 20px 20px 0px 0px;
+	border-radius: 20px 20px 0px 0px;
+	
+	background: -webkit-linear-gradient(top, #0170B9, #27AADE);
+	background: -moz-linear-gradient(top, #0170B9, #27AADE);
+	background: -o-linear-gradient(top, #0170B9, #27AADE);
+	background: linear-gradient(to bottom, #0170B9, #27AADE);
+}
+
+#page>header h1
+{
+	position: relative;
+	padding:20px 100px;
+}
+
+#page>header h1 img
+{
+	position:absolute;
+	left:15px;
+	top:15px;
+}
+
+/* estilos para la barra de navegación */
+
+#page>nav
+{
+	font-family:Courier;
+	font-size:1.4em;
+	color:silver;
+	text-align:center;
+	
+	/* background: -webkit-linear-gradient(top, rgb(213, 186, 50), rgb(255, 218, 62));
+	background: -moz-linear-gradient(top, rgb(213, 186, 50), rgb(255, 218, 62));
+	background: -o-linear-gradient(top, rgb(213, 186, 50), rgb(255, 218, 62)); */
+	background: linear-gradient(to bottom, rgb(213, 186, 50), rgb(255, 218, 62));
+}
+
+#page>nav>ul>li 
+{
+	padding:80px 0px 0px 0px;
+	margin:0px 100px 20px 100px;
+	list-style:none;
+	display:inline-block;
+	text-align:center;
+	cursor:default;
+	position:relative;
+}
+
+#page>nav>ul>li:nth-child(1)
+{
+	background:url("../imgs/book.png");
+	background-repeat:no-repeat;
+	background-position: center 10px;
+}
+
+#page>nav>ul>li:nth-child(2)
+{
+	background:url("../imgs/film.png");
+	background-repeat:no-repeat;
+	background-position: center 10px;
+}
+
+#page>nav>ul>li:nth-child(3)
+{
+	background:url("../imgs/mail.png");
+	background-repeat:no-repeat;
+	background-position: center 10px;
+}
+
+#page>nav>ul>li>a
+{
+	text-decoration:none;
+	color:#FFFFFF;
+	
+	text-shadow: 0px 0px 5px #fff;
+	transition: text-shadow 0.5s;
+}
+
+#page>nav>ul>li>a:hover
+{
+	text-shadow: 2px 2px red;
+}
+
+/* Estilos para el menú desplegable */
+
+#page>nav li ul
+{
+	position:absolute;
+	z-index:2;
+	list-style:none;
+	width:100px;
+	text-align:center;
+	left:50%;
+	margin-left:-50px;
+	top:90px;
+	font:Verdana;
+	font-size: 0.7em;
+	height:0px;
+	overflow:hidden;
+
+	-webkit-transition:height 0.4s linear;
+	-moz-transition:height 0.4s linear;
+	-o-transition:height 0.4s linear;
+	transition:height 0.4s linear;
+}
+
+#page>nav li ul li
+{
+	background-color:#e34c26;
+}
+
+#page>nav li ul li a
+{
+	padding:12px;
+	color:#fff;
+	text-decoration:none;
+	display:block;
+}
+
+#page>nav li ul li:nth-child(odd)
+{
+	background-color:#f06529;
+}
+
+#page>nav li ul li:hover
+{
+	background-color:#ff7e42;
+}
+
+#page>nav li ul li:first-child
+{
+	border-radius:3px 3px 0 0;
+	margin-top:25px;
+	position:relative;
+}
+
+#page>nav li ul li:first-child:before
+{
+	content:'';
+	position:absolute;
+	width:1px;
+	height:1px;
+	border:5px solid transparent;
+	border-bottom-color:#e34c26;
+	left:50%;
+	top:-10px;
+	margin-left:-5px;
+}
+
+#page>nav li ul li:last-child
+{
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+}
+
+#page>nav li:hover ul
+{
+	height:200px;
+}
+
+/* Estilos para los contenidos principales */
+.clearfix:before,
+.clearfix:after, 
+main
+{
+	font-family:Verdana;
+	font-size:0.8em;
+	background-color: white;
+	width:100%;
+	display: table;
+}
+
+article
+{
+	width:240px;
+	text-align:center;
+	line-height: 1.8em;
+	padding:5px 5px 22px 5px;
+	margin: 30px 14px 14px 14px;
+	float:left;
+
+	border-width: 70px 20px 64px 22px;
+	border-style: solid;
+	-moz-border-image: url("../imgs/movil.png") 70 20 64 22;
+	-o-border-image: url("../imgs/movil.png") 70 20 64 22;
+	-webkit-border-image: url("../imgs/movil.png") 70 20 64 22;
+	border-image: url("../imgs/movil.png") 70 20 64 22;
+}		
+
+article header
+{
+	position: relative;
+	border-bottom: 1px solid #999999;
+}
+
+.chincheta
+{
+	position:absolute;
+	top:-91px;
+	width: 35px;
+	height: 49px;
+	background-image: url("../imgs/chincheta.png");
+	z-index:1;
+}
+
+article:nth-child(1) .chincheta
+{
+	left:199px;
+}
+
+article:nth-child(2) .chincheta
+{
+	left:120px;
+}
+
+article:nth-child(3) .chincheta
+{
+	left:30px;
+}
+
+article:nth-child(1)
+{
+	transform:rotate(-2deg);
+   -webkit-transform:rotate(-2deg);
+   -moz-transform:rotate(-2deg);
+   -o-transform:rotate(-2deg);
+}
+
+article:nth-child(3)
+{
+	transform:rotate(2deg);
+   -webkit-transform:rotate(2deg);
+   -moz-transform:rotate(2deg);
+   -o-transform:rotate(2deg);
+}
+
+img[src*="javascript"]
+{
+	background: -webkit-radial-gradient(circle, #FFFFFF 0%, #cecece 200%);
+	background: -moz-radial-gradient(circle, #FFFFFF 0%, #cecece 200%);
+	background: -o-radial-gradient(circle, #FFFFFF 0%, #cecece 200%);
+	background: radial-gradient(circle, #FFFFFF 0%, #cecece 200%);
+}
+
+h2
+{
+	padding: 10px;
+	font-size: 1.2em;
+	letter-spacing: 0.5em;
+	
+	-moz-text-shadow: 2px 2px 2px gray;
+	-o-text-shadow: 2px 2px 2px gray;
+	-webkit-text-shadow: 2px 2px 2px gray;
+	text-shadow: 2px 2px 2px gray;
+}
+
+/* estilos para el pie de página */
+footer
+{
+	clear: both;
+	font-size:0.7em;
+	color:white;
+	text-align: center;
+	padding:15px 0px;
+	border-top:6px black solid;
+	
+	background: -webkit-linear-gradient(bottom, #0170B9, #27AADE);
+	background: -moz-linear-gradient(bottom, #0170B9, #27AADE);
+	background: -o-linear-gradient(bottom, #0170B9, #27AADE);
+	background: linear-gradient(to top, #0170B9, #27AADE);
+
+	-moz-border-radius: 0px 0px 20px 20px;
+	-webkit-border-radius: 0px 0px 20px 20px;
+	border-radius: 0px 0px 20px 20px;
+}
+
+footer a
+{
+	color:white;
+}
